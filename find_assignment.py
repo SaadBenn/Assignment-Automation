@@ -3,8 +3,8 @@ import os
 
 from submit_assignment import submit_assignment
 
-def find_assignment():
 
+def find_assignment():
     submission_dir = '~/desktop/completed_assignments'
 
     # grab the classes folder
