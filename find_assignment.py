@@ -5,7 +5,7 @@ from submit_assignment import submit_assignment
 
 
 def find_assignment():
-    submission_dir = '~/desktop/completed_assignments'
+    submission_dir = '/Users/saad/desktop/Completed_Assignments'
 
     # grab the classes folder
     directory_list = list(os.listdir(submission_dir))
