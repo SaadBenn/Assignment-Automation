@@ -37,16 +37,14 @@ def submit_assignment(file_tup):
     folder = file_tup[0]
 
     if folder == '3430':
+        # Navigate to teh course
         course_select = driver.find_element_by_xpath("//a[@title = 'Enter COMP-2980-A01 - Workterm 1']")
         course_select.click()
 
-        time.sleep(5)
+        # Navigate to the Assessment bar
+        assessment_select = driver.find_element_by_xpath("//*[contains(text(), 'Assessments')]")
+        assessment_select.click()
 
-        # assessment_select = driver.find_element_by_xpath("//span[@class = 'd2l-menuflyout-opener d2l-clickable']")
-        # assessment_select.click()
-        # time.sleep(2)
-        #
-        # assignment_select = driver.find_element_by_xpath("//a[@class = 'vui-link d2l-link vui-outline']")
-        # assignment_select.click()
-        #
-        # time.sleep(10)
+        # Navigate to the Assignment page
+        assignment_select = driver.find_element_by_xpath("//*[contains(text(), 'Assignments')]")
+        assignment_select.click()
